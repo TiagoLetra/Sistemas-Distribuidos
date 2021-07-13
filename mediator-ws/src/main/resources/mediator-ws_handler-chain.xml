@@ -1,0 +1,25 @@
+<handler-chains xmlns="http://java.sun.com/xml/ns/javaee">
+    <handler-chain>
+        <handler>
+            <handler-class>example.ws.handler.LoggingHandler</handler-class>
+        </handler>
+
+        <handler>
+            <handler-class>org.komparator.security.handler.EncriptReceiverHandler</handler-class>
+        </handler>
+    <!-- -->
+        <handler>
+            <handler-class>org.komparator.security.handler.IdOPerationReceiver</handler-class>
+        </handler>
+    <!-- -->
+        <!-- 
+        <handler>
+            <handler-class>org.komparator.security.handler.IdOPerationConstant</handler-class>
+        </handler>
+        -->
+        <handler>
+            <handler-class>example.ws.handler.LoggingHandler</handler-class>
+        </handler>
+    </handler-chain>
+
+</handler-chains>  

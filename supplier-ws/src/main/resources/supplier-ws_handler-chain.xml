@@ -1,0 +1,29 @@
+<handler-chains xmlns="http://java.sun.com/xml/ns/javaee">
+    <handler-chain>
+        <handler>
+            <handler-class>example.ws.handler.LoggingHandler</handler-class>
+        </handler>
+        <!-- -->
+        <handler>
+            <handler-class>org.komparator.security.handler.NonceReceiverHandler</handler-class>
+        </handler>
+        <!---->
+             <!--
+        <handler>
+            <handler-class>org.komparator.security.handler.NonceAttackReceiverHandler</handler-class>
+        </handler>
+         -->
+         
+                <handler>
+            <handler-class>org.komparator.security.handler.DateHandler</handler-class>
+        </handler>
+        <handler>
+            <handler-class>org.komparator.security.handler.SignatureSupplierHandler</handler-class>
+        </handler>
+
+        <handler>
+            <handler-class>example.ws.handler.LoggingHandler</handler-class>
+        </handler>
+    </handler-chain>
+</handler-chains> 
+
